@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-model
+   href="http://download.ros.org/schema/package_format3.xsd"
+   schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>obstacle_avoidance_tb3</name>
+  <version>0.0.0</version>
+  <description>This package creates a simple turtlebot to avoid obstacles and try to make a path</description>
+  <maintainer email="vinay06@umd.edu">Vinay Bukka</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- CHỈ CẦN ament_python -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- Dependencies for Python nodes -->
+  <depend>rclpy</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>tf_transformations</depend>
+
+  <!-- TurtleBot3 dependencies -->
+  <exec_depend>turtlebot3_msgs</exec_depend>
+  <exec_depend>turtlebot3_description</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+
+  <!-- Gazebo -->
+  <exec_depend>gazebo_ros_pkgs</exec_depend>
+
+  <!-- RViz -->
+  <exec_depend>rviz2</exec_depend>
+
+  <!-- Testing -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- QUAN TRỌNG: ament_python -->
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
