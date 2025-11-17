@@ -26,7 +26,7 @@ To execute the algorithm, follow the steps below. The initial method involves ru
     # Terminal 2
     source /opt/ros/humble/setup.bash
     source install/setup.bash
-    ros2 run obstacle_avoidance_tb3 turtlebot_teleop.py
+    ros2 run obstacle_avoidance_tb3 turtlebot_teleop
 ```
 4. Run below commands to execute obstacle Avoidance algorithm
 ```bash
