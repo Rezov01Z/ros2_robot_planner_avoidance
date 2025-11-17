@@ -129,7 +129,7 @@ class SmartNavigation(Node):
         # Kiểm tra vật cản trong vùng phía trước (330-30 độ)
         for i in range(330, 390):
             idx = i % 360
-            if 0.1 < ranges[idx] < 0.6:  # Vật cản trong khoảng 0.1-0.6m
+            if 0.1 < ranges[idx] < 0.4:  # Vật cản trong khoảng 0.1-0.6m
                 obstacle_detected = True
                 break
                 
