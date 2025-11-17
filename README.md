@@ -83,7 +83,7 @@ docker run -it --env="DISPLAY=${DISPLAY}" --volume="/tmp/.X11-unix:/tmp/.X11-uni
     # Terminal 1
     colcon build --packages-select obstacle_avoidance_tb3
     source install/setup.bash
-    ros2 launch obstacle_avoidance_tb3 launch.py
+    ros2 launch obstacle_avoidance_tb3 smart_navigation_launch.py goal_x:=2.0 goal_y:=1.0
 ```
 
 ## Results
